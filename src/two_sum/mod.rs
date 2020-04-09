@@ -24,7 +24,7 @@ pub fn two_sum(nums: &[i32], target: &i32) -> Vec<usize> {
 
 #[cfg(test)]
 mod tests {
-    use crate::two_sum::two_sum;
+    use super::two_sum;
 
     #[test]
     fn given_example() {

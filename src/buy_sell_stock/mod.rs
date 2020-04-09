@@ -20,7 +20,7 @@ fn max_profit(prices: &[i32]) -> i32 {
 
 #[cfg(test)]
 mod tests {
-    use crate::buy_sell_stock::max_profit;
+    use super::max_profit;
 
     #[test]
     fn given_example_1() {
