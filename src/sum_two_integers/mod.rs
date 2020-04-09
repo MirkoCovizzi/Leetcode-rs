@@ -1,7 +1,5 @@
 // https://leetcode.com/problems/sum-of-two-integers/
 
-use std::ops::{BitOr, BitAnd};
-
 /// Half Adder logic extended to integers:
 /// 1) x AND y -> computes all the carry bits
 /// 2) x XOR y -> computes the complete sum without carry
