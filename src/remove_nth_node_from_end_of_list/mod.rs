@@ -48,7 +48,7 @@ fn print_list(head: &Option<Box<ListNode>>) -> String {
         if head.as_ref().unwrap().next.is_some() {
             output.push_str(&format!("{}->", head.as_ref().unwrap().val));
         } else {
-            output.push_str(&format!("{}->", head.as_ref().unwrap().val));
+            output.push_str(&format!("{}", head.as_ref().unwrap().val));
             break;
         }
         head = &head.as_ref().unwrap().next;
