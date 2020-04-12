@@ -6,6 +6,7 @@ mod longest_substring_without_repeating_characters;
 mod number_of_islands;
 mod remove_nth_node_from_end_of_list;
 mod number_of_one_bits;
+mod maximum_subarray;
 
 fn main() {
 
