@@ -9,6 +9,7 @@ mod number_of_one_bits;
 mod maximum_subarray;
 mod set_matrix_zeroes;
 mod spiral_matrix;
+mod reverse_linked_list;
 
 fn main() {
 
