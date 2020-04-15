@@ -7,6 +7,7 @@ mod number_of_islands;
 mod remove_nth_node_from_end_of_list;
 mod number_of_one_bits;
 mod maximum_subarray;
+mod set_matrix_zeroes;
 
 fn main() {
 
