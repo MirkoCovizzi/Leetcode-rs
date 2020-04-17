@@ -7,7 +7,7 @@ fn spiral_order(matrix: Vec<Vec<i32>>) -> Vec<i32> {
         return sol;
     }
 
-    let mut m = matrix;
+    let m = matrix;
 
     let rows = m.len();
     let cols = m[0].len();

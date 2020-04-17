@@ -40,6 +40,7 @@ pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<Li
     }
 }
 
+#[allow(dead_code)]
 fn print_list(head: &Option<Box<ListNode>>) -> String {
     let mut output = String::new();
 
@@ -73,7 +74,7 @@ mod tests {
         node_2.next = Some(Box::new(node_3));
         node_1.next = Some(Box::new(node_2));
 
-        let mut head = Some(Box::new(node_1));
+        let head = Some(Box::new(node_1));
 
         remove_nth_from_end(head, 2);
     }

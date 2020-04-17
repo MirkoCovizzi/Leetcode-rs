@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/set-matrix-zeroes/
 
 fn set_zeroes(matrix: &mut Vec<Vec<i32>>) {
-    let mut m = matrix;
+    let m = matrix;
     let rows = m.len();
     let cols = m[0].len();
     let mut is_col = false;

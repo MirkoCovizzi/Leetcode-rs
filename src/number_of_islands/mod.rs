@@ -4,11 +4,7 @@ fn dfs(grid: &mut Vec<Vec<char>>, i: i32, j: i32) -> i32 {
     let i: usize = i as usize;
     let j: usize = j as usize;
 
-    if i < 0 ||
-        i >= grid.len() ||
-        j < 0 ||
-        j >= grid[i].len() ||
-        grid[i][j] == '0' {
+    if i >= grid.len() || j >= grid[i].len() || grid[i][j] == '0' {
         return 0;
     }
 

@@ -14,6 +14,7 @@ pub fn hamming_weight(n: u32) -> i32 {
     count
 }
 
+#[allow(dead_code)]
 pub fn hamming_weight_v2(n: u32) -> i32 {
     if n == 0 {
         return 0;
