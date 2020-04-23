@@ -4,14 +4,14 @@ pub fn max_profit(prices: Vec<i32>) -> i32 {
     let mut min = i32::max_value();
     let mut max = i32::min_value();
 
-    for p in prices.iter() {
-        if *p > max {
-            max = *p;
+    for p in prices {
+        if p > max {
+            max = p;
         }
 
-        if *p < min {
-            min = *p;
-            max = *p;
+        if p < min {
+            min = p;
+            max = p;
         }
     }
 

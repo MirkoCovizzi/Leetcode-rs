@@ -70,22 +70,14 @@ mod tests {
 
     #[test]
     fn given_example_1() {
-        let input = vec![
-            vec![1, 2, 3],
-            vec![4, 5, 6],
-            vec![7, 8, 9]
-        ];
+        let input = vec![vec![1, 2, 3], vec![4, 5, 6], vec![7, 8, 9]];
         let output = vec![1, 2, 3, 6, 9, 8, 7, 4, 5];
         assert_eq!(spiral_order(input), output);
     }
 
     #[test]
     fn given_example_2() {
-        let input = vec![
-            vec![1, 2, 3, 4],
-            vec![5, 6, 7, 8],
-            vec![9, 10, 11, 12]
-        ];
+        let input = vec![vec![1, 2, 3, 4], vec![5, 6, 7, 8], vec![9, 10, 11, 12]];
         let output = vec![1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7];
         assert_eq!(spiral_order(input), output);
     }

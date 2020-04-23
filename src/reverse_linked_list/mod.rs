@@ -9,10 +9,7 @@ pub struct ListNode {
 impl ListNode {
     #[inline]
     fn new(val: i32) -> Self {
-        ListNode {
-            next: None,
-            val,
-        }
+        ListNode { next: None, val }
     }
 }
 
@@ -23,7 +20,7 @@ pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
     while let Some(c) = cur {
         prev = Some(Box::new(ListNode {
             val: c.val,
-            next: prev
+            next: prev,
         }));
         cur = c.next;
     }
@@ -33,10 +30,7 @@ pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
 
 #[cfg(test)]
 mod tests {
-    use super::{
-        ListNode,
-        reverse_list,
-    };
+    use super::{reverse_list, ListNode};
 
     #[test]
     fn given_example() {

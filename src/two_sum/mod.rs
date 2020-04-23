@@ -12,8 +12,8 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
             Some(val) => {
                 result.push(*val as i32);
                 result.push(i as i32);
-                break
-            },
+                break;
+            }
             None => {
                 hm.insert(n, i);
             }

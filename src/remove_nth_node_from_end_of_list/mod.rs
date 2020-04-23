@@ -2,18 +2,15 @@
 
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
-  pub val: i32,
-  pub next: Option<Box<ListNode>>
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
 }
 
 impl ListNode {
-  #[inline]
-  fn new(val: i32) -> Self {
-    ListNode {
-      next: None,
-      val
+    #[inline]
+    fn new(val: i32) -> Self {
+        ListNode { next: None, val }
     }
-  }
 }
 
 pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
@@ -34,7 +31,8 @@ pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<Li
             }
             tail = &mut (*tail).as_mut().unwrap().next;
         }
-        (*tail).as_mut().unwrap().next = (*tail).as_mut().unwrap().next.as_mut().unwrap().next.take();
+        (*tail).as_mut().unwrap().next =
+            (*tail).as_mut().unwrap().next.as_mut().unwrap().next.take();
 
         head
     }
